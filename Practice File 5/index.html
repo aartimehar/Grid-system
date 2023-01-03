@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Aarti // Web Developer</title>
+    <link rel="stylesheet" href="./index1.css" />
+    <script src="./index.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"></script>
+  </head>
+  <header>
+<!-------------------------------------------->
+ </header>
+ <body class="bg-black">
+
+    <!-- Grid system -->
+    <h1 class="text-center me-5">Grid System</h1>
+    
+    <br>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            One of three columns
+          </div>
+          <div class="col-sm">
+            One of three columns
+          </div>
+          <div class="col-sm">
+            One of three columns
+          </div>
+        </div>
+      </div>
+     
+      <!-- Auto-layout columns
+      Equal-width -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            1 of 2
+          </div>
+          <div class="col">
+            2 of 2
+          </div>
+        </div>
+       
+        <div class="row">
+          <div class="col">
+            1 of 3
+          </div>
+          <div class="col">
+            2 of 3
+          </div>
+          <div class="col">
+            3 of 3
+          </div>
+        </div>
+      </div>
+    
+      <!-- Equal-width multi-line -->
+      <div class="container">
+        <div class="row">
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="w-100"></div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+        </div>
+      </div>
+  
+      <!-- Setting one column width -->
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            1 of 3
+          </div>
+          <div class="col-6">
+            2 of 3 (wider)
+          </div>
+          <div class="col">
+            3 of 3
+          </div>
+        </div>
+       
+        <div class="row">
+          <div class="col">
+            1 of 3
+          </div>
+          <div class="col-5">
+            2 of 3 (wider)
+          </div>
+          <div class="col">
+            3 of 3
+          </div>
+        </div>
+      </div>
+    
+      <!-- Variable width content -->
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col col-lg-2">
+            1 of 3
+          </div>
+          <div class="col-md-auto">
+            Variable width content
+          </div>
+          <div class="col col-lg-2">
+            3 of 3
+          </div>
+        </div>
+   
+        <div class="row">
+          <div class="col">
+            1 of 3
+          </div>
+          <div class="col-md-auto">
+            Variable width content
+          </div>
+          <div class="col col-lg-2">
+            3 of 3
+          </div>
+        </div>
+      </div>
+   
+      <!-- Responsive classes
+      All breakpoints -->
+      <div class="container">
+        <div class="row">
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+        </div>
+     
+        <div class="row">
+          <div class="col-8">col-8</div>
+          <div class="col-4">col-4</div>
+        </div>
+      </div>
+     
+      <!-- Stacked to horizontal -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">col-sm-8</div>
+          <div class="col-sm-4">col-sm-4</div>
+        </div>
+        
+        <div class="row">
+          <div class="col-sm">col-sm</div>
+          <div class="col-sm">col-sm</div>
+          <div class="col-sm">col-sm</div>
+        </div>
+      </div>
+   
+      <!-- Mix and match -->
+      <div class="container">
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row">
+          <div class="col-md-8">.col-md-8</div>
+          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        </div>
+       
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div class="row">
+          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        </div>
+      
+        <!-- Columns are always 50% wide, on mobile and desktop -->
+        <div class="row">
+          <div class="col-6">.col-6</div>
+          <div class="col-6">.col-6</div>
+        </div>
+      </div>
+ 
+    
+      
+      <!-- Row columns -->
+      <div class="container">
+        <div class="row row-cols-2">
+          <div class="col">Column</div>
+          <div class="col">Column</div>
+          <div class="col">Column</div>
+          <div class="col">Column</div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row row-cols-3">
+          <div class="col">Column</div>
+          <div class="col">Column</div>
+          <div class="col">Column</div>
+          <div class="col">Column</div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row row-cols-4">
+          <div class="col">Column</div>
+          <div class="col">Column</div>
+          <div class="col">Column</div>
+          <div class="col">Column</div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row row-cols-4">
+          <div class="col">Column</div>
+          <div class="col">Column</div>
+          <div class="col-6">Column</div>
+          <div class="col">Column</div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+          <div class="col">Column</div>
+          <div class="col">Column</div>
+          <div class="col">Column</div>
+          <div class="col">Column</div>
+        </div>
+      </div>
+     
+      <!-- You can also use the accompanying Sass mixin, row-cols():
+    https://devdocs.io/bootstrap~4/layout/grid/index -->
+
+    <!-- Alignment
+      Vertical alignment  -->
+      <div class="container">
+        <div class="row align-items-start">
+          <div class="col">
+            One of three columns
+          </div>
+          <div class="col">
+            One of three columns
+          </div>
+          <div class="col">
+            One of three columns
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col">
+            One of three columns
+          </div>
+          <div class="col">
+            One of three columns
+          </div>
+          <div class="col">
+            One of three columns
+          </div>
+        </div>
+        <div class="row align-items-end">
+          <div class="col">
+            One of three columns
+          </div>
+          <div class="col">
+            One of three columns
+          </div>
+          <div class="col">
+            One of three columns
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col align-self-start">
+            One of three columns
+          </div>
+          <div class="col align-self-center">
+            One of three columns
+          </div>
+          <div class="col align-self-end">
+            One of three columns
+          </div>
+        </div>
+      </div>
+     
+      <!-- Horizontal alignment -->
+      <div class="container">
+        <div class="row justify-content-start">
+          <div class="col-4">
+            One of two columns
+          </div>
+          <div class="col-4">
+            One of two columns
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-4">
+            One of two columns
+          </div>
+          <div class="col-4">
+            One of two columns
+          </div>
+        </div>
+        <div class="row justify-content-end">
+          <div class="col-4">
+            One of two columns
+          </div>
+          <div class="col-4">
+            One of two columns
+          </div>
+        </div>
+        <div class="row justify-content-around">
+          <div class="col-4">
+            One of two columns
+          </div>
+          <div class="col-4">
+            One of two columns
+          </div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-4">
+            One of two columns
+          </div>
+          <div class="col-4">
+            One of two columns
+          </div>
+        </div>
+      </div>
+     
+      <!-- No gutters 
+      .no-gutters {
+        margin-right: 0;
+        margin-left: 0;
+        > .col,
+        > [class*="col-"] {
+          padding-right: 0;
+          padding-left: 0;
+        } }-->
+        <div class="row no-gutters">
+            <div class="col-sm-6 col-md-8">.col-sm-6 .col-md-8</div>
+            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+          </div>
+          
+      <!-- Column wrapping -->
+      <div class="container">
+        <div class="row">
+          <div class="col-9">.col-9</div>
+          <div class="col-4">.col-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
+          <div class="col-6">.col-6<br>Subsequent columns continue along the new line.</div>
+        </div>
+      </div>
+      
+      <!-- Column breaks -->
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+          <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+    <!-- Force next columns to break to new line -->
+          <div class="w-100"></div>
+          <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+          <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+          <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+         
+          <!-- Force next columns to break to new line at md breakpoint and up -->
+          <div class="w-100 d-none d-md-block"></div>
+  
+          <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+          <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+        </div>
+      </div>
+      
+      <!-- Reordering Order classes -->
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            First in DOM, no order applied
+          </div>
+          <div class="col order-12">
+            Second in DOM, with a larger order
+          </div>
+          <div class="col order-1">
+            Third in DOM, with an order of 1
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col order-last">
+            First in DOM, ordered last
+          </div>
+          <div class="col">
+            Second in DOM, unordered
+          </div>
+          <div class="col order-first">
+            Third in DOM, ordered first
+          </div>
+        </div>
+      </div>
+    
+      <!-- Offsetting columns -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">.col-md-4</div>
+          <div class="col-md-4 offset-md-4">.col-md-4 .offset-md-4</div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+          <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
+          <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">.col-sm-5 .offset-sm-2 .col-md-6 .offset-md-0</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div>
+          <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">.col-sm-6 .col-md-5 .offset-md-2 .col-lg-6 .offset-lg-0</div>
+        </div>
+      </div>
+    
+      <!-- Margin utilities -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">.col-md-4</div>
+          <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 ml-md-auto">.col-md-3 .ml-md-auto</div>
+          <div class="col-md-3 ml-md-auto">.col-md-3 .ml-md-auto</div>
+        </div>
+        <div class="row">
+          <div class="col-auto mr-auto">.col-auto .mr-auto</div>
+          <div class="col-auto">.col-auto</div>
+        </div>
+      </div>
+     
+      <!-- Nesting -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9">
+            Level 1: .col-sm-9
+            <div class="row">
+              <div class="col-8 col-sm-6">
+                Level 2: .col-8 .col-sm-6
+              </div>
+              <div class="col-4 col-sm-6">
+                Level 2: .col-4 .col-sm-6
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      <!-- Sass mixins
+      https://devdocs.io/bootstrap~4/layout/grid/index -->
+
+      <!-- Containers  https://devdocs.io/bootstrap~4/layout/overview/index -->
+      
+      <!-- All-in-one -->
+      <div class="container">
+        <!-- Content here -->
+      </div>
+      <!-- Fluid -->
+      <div class="container-fluid">
+        ...
+      </div>
+      <!-- Responsive -->
+      <div class="container-sm">100% wide until small breakpoint</div>
+      <div class="container-md">100% wide until medium breakpoint</div>
+      <div class="container-lg">100% wide until large breakpoint</div>
+      <div class="container-xl">100% wide until extra large breakpoint</div>
+      <!-- Gutters -->
+      <div class="container px-lg-5 ms-5">
+        <div class="row mx-lg-n5">
+          <div class="col py-2 px-lg-6 border bg-light">Custom column padding</div>
+          <div class="col py-2 px-lg-6 border bg-light ">Custom column padding</div>
+        </div>
+      </div>
+      
+      <!-- Responsive breakpoints 
+    // Extra small devices (portrait phones, less than 576px)
+    // No media query for `xs` since this is the default in Bootstrap
+
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) { ... }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) { ... }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) { ... }
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) { ... }-->
+
+
+</body>
+</html>
